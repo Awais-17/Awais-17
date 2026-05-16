@@ -171,6 +171,9 @@ applications:
 
 <br>
 
+## 🏆 GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=Awais-17&theme=gotham&no-frame=false&no-bg=true&margin-w=4)
+
 <!-- CURRENT FOCUS -->
 <div align="center">
 
