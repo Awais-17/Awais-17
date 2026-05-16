@@ -191,7 +191,7 @@ applications:
 
 <br><br>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Awais-17&theme=dracula&hide_border=true&bg_color=282A36&color=BD93F9&line=FF79C6&point=FFB86C&area=true&area_color=BD93F920" width="95%" />
+<img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub?username=Awais-17&theme=dracula&hide_border=true&bg_color=282A36&color=BD93F9&line=FF79C6&point=FFB86C&area=true&area_color=BD93F920" width="95%" />
 
 <br><br>
 
