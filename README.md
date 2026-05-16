@@ -1,5 +1,4 @@
-
-readme_dark = '''<div align="center">
+<div align="center">
 
 <!-- ANIMATED TYPING HEADER -->
 <a href="https://git.io/typing-svg">
@@ -338,8 +337,3 @@ Keep Coding 💻 Keep Building 🚀
 [![](https://visitcount.itsvg.in/api?id=Awais-17&icon=5&color=0)](https://visitcount.itsvg.in)
 '''
 
-with open('/mnt/agents/output/README.md', 'w', encoding='utf-8') as f:
-    f.write(readme_dark)
-
-print("README.md saved!")
-print(f"File size: {len(readme_dark)} chars")
