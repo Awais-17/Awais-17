@@ -1,3 +1,23 @@
+<div align="center">
+<!-- ANIMATED TYPING HEADER -->
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&pause=1000&color=00D4FF&center=true&vCenter=true&width=650&lines=Hi+%F0%9F%91%8B%2C+I'm+Mohammed+Awais+Hussain;Full-Stack+Developer+%F0%9F%9A%80;Hackathon+Champion+%F0%9F%8F%86;Building+Metis+IDE+%F0%9F%92%A1;CS+Student+%7C+Batch+2028" alt="Typing SVG" />
+</a>
+<!-- ANIMATED WAVE BANNER -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00D4FF,50:7B2FF7,100:FF006E&height=180&section=header&text=&fontSize=0&animation=twinkling" width="100%" />
+</div>
+<!-- PROFILE VIEWS COUNTER -->
+<div align="right">
+  <img src="https://komarev.com/ghpvc/?username=Awais-17&label=Profile%20Views&color=00D4FF&style=for-the-badge&logo=eye&logoColor=white" alt="Profile Views" />
+</div>
+
+<!-- ABOUT ME -->
+<div align="center">
+<img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"> About Me
+</div>
+<div align="center">
+
+
 # 💫 About Me:
 Mohammed Awais Hussain| B.E. Computer Science & Engineering, Presidency University, Bengaluru (2nd Year, Batch of 2028)<br>A driven CS student and self-starter with hands-on experience in full-stack web development, competitive hackathons, and real-world freelance projects. Currently interning at PreserveX (Web Development, April 2026) and building Metis — an ambitious offline-first mobile IDE for Android targeting students without laptops.<br>Technical Skills:<br>Python · Java · JavaScript · HTML · CSS · SQL · DSA in C · Kotlin (Jetpack Compose)<br>Highlights:<br>🥉 3rd place — PROTONEX 2026 (CareAI, health app)<br>🥈 2nd place — Innovatex 4.0 (Spot Flaw, bug detection tool)<br>Built and delivered premium freelance websites (Laziz restaurant, Punjabi restaurant)<br>Applied to Microsoft SWE & Explore Intern roles and Jio Institute AI/ML Research Internship<br>Currently exploring: Agentic AI coding tools (Gemini CLI, Cline, Aider) · GSoC 2026 prep · AI/ML research<br>🔗 github.com/Awais-17
 
