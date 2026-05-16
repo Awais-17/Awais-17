@@ -118,17 +118,86 @@ AI/ML Research Aspirant
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/_awais_1717) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/mohammed-awais-hussain-a-86649b334) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/https://x.com/AwaisHussain177) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:mdawaisah@gmail.com) 
 
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=flat-square&logo=c&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat-square&logo=css3&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=flat-square&logo=openjdk&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat-square&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat-square&logo=javascript&logoColor=%23F7DF1E) ![Python](https://img.shields.io/badge/python-3670A0?style=flat-square&logo=python&logoColor=ffdd54) ![Swift](https://img.shields.io/badge/swift-F54A2A?style=flat-square&logo=swift&logoColor=white) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=flat-square&logo=netlify&logoColor=#00C7B7) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=flat-square&logo=vercel&logoColor=white) ![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=flat-square&logo=render&logoColor=white) ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=flat-square&logo=apache&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=flat-square&logo=mysql&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat-square&logo=mongodb&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.shion.dev/api?username=Awais-17&theme=rose_pine&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://streak-stats.demolab.com/?user=Awais-17&theme=rose_pine&hide_border=false)<br/>
-![](https://github-readme-stats.shion.dev/api/top-langs/?username=Awais-17&theme=rose_pine&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+$ whoami
+Mohammed Awais Hussain
 
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=Awais-17&limit=5&theme=gotham&combine_all_yearly_contributions=true)
+$ pwd
+~/projects/current
 
----
-[![](https://komarev.com/ghpvc/?username=Awais-17&icon=0&color=0)](https://visitcount.itsvg.in)
+$ ls -la
+🔭 Metis/          # Offline-first Mobile IDE for Android
+🌱 agentic-ai/     # Learning Gemini CLI, Cline, Aider
+🤝 hackathons/      # Looking to collaborate
+🤔 gsoc-2026/       # GSoC 2026 preparation
+💬 ask-me-about/    # Full-Stack, DSA, Hackathon Strategy
+📫 contact/         # mdawaisah@gmail.com
+⚡ fun-fact/        # Built first website before turning 18!
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+$ echo "Keep Coding 💻 Keep Building 🚀"
+Keep Coding 💻 Keep Building 🚀
+
+<!-- 3D CONTRIBUTION CALENDAR -->
+<div align="center">
+🔥 3D Contribution Calendar
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+</div>
+<div align="center">
+<img src="https://github-readme-3d-contrib.vercel.app/api?username=Awais-17&theme=radical&background=0D1117&text=FFFFFF&count_private=true" width="95%" />
+</div>
+
+<!-- DEV QUOTE -->
+<div align="center">
+💬 Dev Quote of the Day
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+</div>
+<div align="center">
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical&border=true&bg_color=0D1117&title_color=00D4FF&text_color=FFFFFF" width="80%" />
+</div>
+
+<!-- HOLOPIN BADGES -->
+<div align="center">
+🎖️ Holopin Badges
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+</div>
+<div align="center">
+<a href="https://holopin.io/@awais-17">
+  <img src="https://holopin.me/awais-17" alt="Holopin Badges" width="80%" />
+</a>
+</div>
+
+<!-- CONNECT -->
+<div align="center">
+🌐 Let's Connect
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
+<p>
+  <a href="https://instagram.com/_awais_1717" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=0D1117" />
+  </a>
+  &nbsp;
+  <a href="https://www.linkedin.com/in/mohammed-awais-hussain-a-86649b334" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D1117" />
+  </a>
+  &nbsp;
+  <a href="https://x.com/AwaisHussain177" target="_blank">
+    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white&labelColor=0D1117" />
+  </a>
+  &nbsp;
+  <a href="mailto:mdawaisah@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/Awais-17" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=0D1117" />
+  </a>
+</p>
+</div>
+
+<!-- FOOTER -->
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF006E,50:7B2FF7,100:00D4FF&height=150&section=footer&text=Thanks%20for%20visiting!&fontSize=24&fontColor=FFFFFF&animation=twinkling" width="100%" />
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=2000&color=00D4FF&center=true&vCenter=true&width=500&lines=Keep+Coding+%F0%9F%92%BB+Keep+Building+%F0%9F%9A%80;Made+with+%E2%9D%A4%EF%B8%8F+by+Mohammed+Awais+Hussain" alt="Footer Typing" />
+</div>
+<!-- Visit Counter -->
+https://visitcount.itsvg.in
