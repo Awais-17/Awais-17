@@ -165,8 +165,6 @@ applications:
 
 ## 📊 GitHub Analytics
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
 </div>
 
 <div align="center">
@@ -189,11 +187,6 @@ applications:
 <img src="https://streak-stats.demolab.com/?user=Awais-17&theme=dracula&hide_border=true&background=282A36&stroke=6272A4&ring=BD93F9&fire=FFB86C&currStreakLabel=BD93F9&sideLabels=F8F8F2&currStreakNum=FFB86C&sideNums=8BE9FD&dates=6272A4&border_radius=15" width="70%" />
 
 <br><br>
-
-<img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub?username=Awais-17&theme=dracula&hide_border=true&bg_color=282A36&color=BD93F9&line=FF79C6&point=FFB86C&area=true&area_color=BD93F920" width="95%" />
-
-<br><br>
-
 
 </div>
 
