@@ -1,3 +1,39 @@
+name: Mohammed Awais Hussain
+role: Full-Stack Developer & CS Student
+education:
+  degree: B.E. Computer Science & Engineering
+  university: Presidency University, Bengaluru
+  year: 2nd Year | Batch of 2028
+
+internship:
+  company: PreserveX
+  role: Web Development Intern
+  since: April 2026
+
+current_project:
+  name: Metis
+  description: Offline-first Mobile IDE for Android
+  target: Students without laptops
+  stack: [Kotlin, Jetpack Compose]
+
+tech_stack:
+  languages: [Python, Java, JavaScript, Kotlin, C, SQL]
+  frontend: [HTML5, CSS3, React]
+  backend: [Node.js, Express]
+  databases: [MySQL, MongoDB, Supabase]
+  mobile: [Kotlin, Jetpack Compose]
+  tools: [Git, GitHub, VS Code, Android Studio, Figma]
+  hosting: [Netlify, Vercel, Render]
+
+exploring:
+  - Agentic AI coding tools (Gemini CLI, Cline, Aider)
+  - GSoC 2026 preparation
+  - AI/ML research opportunities
+
+applications:
+  - Microsoft SWE & Explore Intern roles
+  - Jio Institute AI/ML Research Internship
+
 &lt;div align="center"&gt;
 
 &lt;!-- ═══════════════════════════════════════════════ --&gt;
@@ -35,43 +71,6 @@
 &lt;div align="center"&gt;
 
 ```yaml
-name: Mohammed Awais Hussain
-role: Full-Stack Developer & CS Student
-education:
-  degree: B.E. Computer Science & Engineering
-  university: Presidency University, Bengaluru
-  year: 2nd Year | Batch of 2028
-
-internship:
-  company: PreserveX
-  role: Web Development Intern
-  since: April 2026
-
-current_project:
-  name: Metis
-  description: Offline-first Mobile IDE for Android
-  target: Students without laptops
-  stack: [Kotlin, Jetpack Compose]
-
-tech_stack:
-  languages: [Python, Java, JavaScript, Kotlin, C, SQL]
-  frontend: [HTML5, CSS3, React]
-  backend: [Node.js, Express]
-  databases: [MySQL, MongoDB, Supabase]
-  mobile: [Kotlin, Jetpack Compose]
-  tools: [Git, GitHub, VS Code, Android Studio, Figma]
-  hosting: [Netlify, Vercel, Render]
-
-exploring:
-  - Agentic AI coding tools (Gemini CLI, Cline, Aider)
-  - GSoC 2026 preparation
-  - AI/ML research opportunities
-
-applications:
-  - Microsoft SWE & Explore Intern roles
-  - Jio Institute AI/ML Research Internship
-
-
   </div>
 
 <!-- ═══════════════════════════════════════════════ -->
