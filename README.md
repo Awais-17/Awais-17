@@ -2,7 +2,7 @@
 
 <!-- ANIMATED TYPING HEADER -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&pause=1000&color=BD93F9&center=true&vCenter=true&width=650&lines=Hi+%F0%9F%91%8B%2C+I'm+Mohammed+Awais+Hussain;Full-Stack+Developer+%F0%9F%9A%80;Hackathon+Champion+%F0%9F%8F%86;Building+Metis+IDE+%F0%9F%92%A1;CS+Student+%7C+Batch+2028" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&pause=1000&color=BD93F9&center=true&vCenter=true&width=650&lines=Hi+%F0%9F%91%8B%2C+I'm+Mohammed+Awais+Hussain;Vibe+coder+%F0%9F%9A%80;Hackathon+Champion+%F0%9F%8F%86;Ai+Enthusiast+%F0%9F%92%A1;CS+Student+%7C+Batch+2028" alt="Typing SVG" />
 </a>
 
 <!-- ANIMATED WAVE BANNER -->
@@ -194,7 +194,7 @@ applications:
 
 <br><br>
 
-<img src="https://github-contributor-stats.vercel.app/api?username=Awais-17&limit=5&theme=dracula&combine_all_yearly_contributions=true&hide_border=true&bg_color=282A36" width="70%" />
+<img src="https://raw.githubusercontent.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/main/_GIFs/YOUR_CHOSEN_GIF.gif" width="100%" />
 
 </div>
 
