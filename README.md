@@ -173,7 +173,7 @@ applications:
 <tr>
 <td width="50%">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Awais-17&show_icons=true&theme=dracula&hide_border=true&bg_color=282A36&title_color=BD93F9&icon_color=FF79C6&text_color=F8F8F2&border_radius=15&include_all_commits=true&count_private=true" width="100%" />
+
 
 </td>
 <td width="50%">
@@ -183,7 +183,7 @@ applications:
 </td>
 </tr>
 </table>
-
+<img src="https://streak-stats.demolab.com/?user=Awais-17&theme=dracula&hide_border=true&background=282A36&stroke=6272A4&ring=BD93F9&fire=FFB86C&currStreakLabel=BD93F9&sideLabels=F8F8F2&currStreakNum=FFB86C&sideNums=8BE9FD&dates=6272A4&border_radius=15" width="70%" />
 
 
 <br><br>
