@@ -184,7 +184,7 @@ applications:
 </tr>
 </table>
 
-<img src="https://streak-stats.demolab.com/?user=Awais-17&theme=dracula&hide_border=true&background=282A36&stroke=6272A4&ring=BD93F9&fire=FFB86C&currStreakLabel=BD93F9&sideLabels=F8F8F2&currStreakNum=FFB86C&sideNums=8BE9FD&dates=6272A4&border_radius=15" width="70%" />
+
 
 <br><br>
 
