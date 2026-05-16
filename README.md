@@ -165,30 +165,9 @@ applications:
 
 ## 📊 GitHub Analytics
 
-</div>
-
-<div align="center">
-
-<table>
-<tr>
-<td width="50%">
-
-
-
-</td>
-<td width="50%">
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Awais-17&layout=compact&theme=dracula&hide_border=true&bg_color=282A36&title_color=BD93F9&text_color=F8F8F2&border_radius=15&langs_count=8" width="100%" />
-
-</td>
-</tr>
-</table>
-<img src="https://streak-stats.demolab.com/?user=Awais-17&theme=dracula&hide_border=true&background=282A36&stroke=6272A4&ring=BD93F9&fire=FFB86C&currStreakLabel=BD93F9&sideLabels=F8F8F2&currStreakNum=FFB86C&sideNums=8BE9FD&dates=6272A4&border_radius=15" width="70%" />
-
-
-<br><br>
-
-</div>
+![](https://github-readme-stats.shion.dev/api?username=Awais-17&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
+![](https://streak-stats.demolab.com/?user=Awais-17&theme=dark&hide_border=false)<br/>
+![](https://github-readme-stats.shion.dev/api/top-langs/?username=Awais-17&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
 <br>
 
