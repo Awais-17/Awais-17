@@ -234,58 +234,6 @@ Keep Coding 💻 Keep Building 🚀
 
 <br>
 
-<!-- PARTICLE FLOW CONTRIBUTION CALENDAR -->
-<div align="center">
-
-## 🔮 Particle Flow Contributions
-
-<img src="https://www.pinterest.com/ecosymmetria/cool-gifs//73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-</div>
-
-<div align="center">
-
-<img src="https://github-contribution-grid-snake-dark.svg?user=Awais-17&color=BD93F9&bg=282A36&line=44475A&point=FF79C6" width="95%" />
-
-</div>
-
-<br>
-
-<!-- 3D CONTRIBUTION CALENDAR -->
-<div align="center">
-
-## 🔥 3D Contribution Calendar
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-</div>
-
-<div align="center">
-
-<img src="https://github-readme-3d-contrib.vercel.app/api?username=Awais-17&theme=dracula&background=282A36&text=F8F8F2&count_private=true" width="95%" />
-
-</div>
-
-<br>
-
-<!-- DEV QUOTE -->
-<div align="center">
-
-}
-
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-</div>
-
-<div align="center">
-
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dracula&border=true&bg_color=282A36&title_color=BD93F9&text_color=F8F8F2" width="80%" />
-
-</div>
-
-<br>
-
 <!-- CONNECT -->
 <div align="center">
 
