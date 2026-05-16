@@ -194,7 +194,6 @@ applications:
 
 <br><br>
 
-<img src="https://raw.githubusercontent.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/main/_GIFs/YOUR_CHOSEN_GIF.gif" width="100%" />
 
 </div>
 
@@ -240,7 +239,7 @@ Keep Coding 💻 Keep Building 🚀
 
 ## 🔮 Particle Flow Contributions
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+<img src="https://www.pinterest.com/ecosymmetria/cool-gifs//73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 </div>
 
