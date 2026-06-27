@@ -1,83 +1,118 @@
-<svg viewBox="0 0 760 180" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 760px; margin: 15px 0;">
-    <style>
-      .arc-link {
-        stroke: #2A1F4E;
-        stroke-width: 1.5;
-        stroke-dasharray: 4 4;
-      }
-      .panel-box {
-        fill: #0D0B1E;
-        stroke: #2A1F4E;
-        stroke-width: 1.5;
-        transition: all 0.3s ease;
-      }
-      .panel-box:hover {
-        stroke: #9D7ECF;
-        fill: #14102B;
-        cursor: pointer;
-      }
-      .system-title {
-        font-family: 'JetBrains Mono', monospace;
-        font-weight: 700;
-        font-size: 13px;
-        fill: #C9B8FF;
-      }
-      .system-desc {
-        font-family: sans-serif;
-        font-size: 11px;
-        fill: #8A7AB5;
-      }
-      .system-tag {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 9.5px;
-        fill: #8BE9FD;
-      }
-      @keyframes cycleglow {
-        0%, 100% { stroke: #2A1F4E; }
-        50% { stroke: #9D7ECF; }
-      }
-      .glowing-connector {
-        animation: cycleglow 4s infinite;
-      }
-    </style>
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 760 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<filter id="ng" x="-15%" y="-15%" width="130%" height="130%">
+<feGaussianBlur stdDeviation="3" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="sg" x="-10%" y="-10%" width="120%" height="120%">
+<feGaussianBlur stdDeviation="1.5" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<linearGradient id="con1" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#9D7ECF" stop-opacity="0.8"/>
+<stop offset="100%" stop-color="#00F0FF" stop-opacity="0.8"/>
+</linearGradient>
+<linearGradient id="con2" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#00F0FF" stop-opacity="0.8"/>
+<stop offset="100%" stop-color="#FF79C6" stop-opacity="0.8"/>
+</linearGradient>
+</defs>
 
-    <!-- Connectors -->
-    <path class="arc-link glowing-connector" d="M 230 90 H 290" />
-    <path class="arc-link glowing-connector" d="M 470 90 H 530" />
+<!-- Background -->
+<rect width="760" height="200" fill="#07050F" rx="10"/>
+<rect width="760" height="200" fill="none" stroke="#1A1535" stroke-width="1" rx="10"/>
 
-    <!-- Node 1: SARA LLM -->
-    <g>
-      <rect class="panel-box" x="10" y="20" width="220" height="140" rx="8" />
-      <text class="system-title" x="30" y="55">🧠 SARA LLM [0.5B]</text>
-      <text class="system-desc" x="30" y="80">Sequential distillation pipeline</text>
-      <text class="system-desc" x="30" y="98">from Qwen2.5-4B on NVIDIA H200</text>
-      <text class="system-desc" x="30" y="116">optimized for quick inference.</text>
-      <text class="system-tag" x="30" y="142">&gt;_ PyTorch · H200 · FIM</text>
-      <!-- Pulse dot -->
-      <circle cx="25" cy="51" r="3" fill="#9D7ECF" />
-    </g>
+<!-- Subtle grid -->
+<g opacity="0.04">
+<path d="M0 50H760M0 100H760M0 150H760" stroke="#00F0FF" stroke-width="0.5"/>
+<path d="M190 0V200M380 0V200M570 0V200" stroke="#00F0FF" stroke-width="0.5"/>
+</g>
 
-    <!-- Node 2: SARA AI VOICE -->
-    <g>
-      <rect class="panel-box" x="290" y="20" width="220" height="140" rx="8" />
-      <text class="system-title" x="310" y="55">🎙️ SARA AI [VOICE]</text>
-      <text class="system-desc" x="310" y="80">Autonomous voice-agent layer</text>
-      <text class="system-desc" x="310" y="98">with 18 native tool extensions</text>
-      <text class="system-desc" x="310" y="116">and persistent memory RAG.</text>
-      <text class="system-tag" x="310" y="142">&gt;_ LlamaIndex · Whisper</text>
-      <!-- Pulse dot -->
-      <circle cx="305" cy="51" r="3" fill="#8BE9FD" />
-    </g>
+<!-- ===== CONNECTORS ===== -->
+<!-- Left-to-Center connector -->
+<line x1="230" y1="100" x2="270" y2="100" stroke="url(#con1)" stroke-width="2" stroke-dasharray="6 3" filter="url(#sg)">
+<animate attributeName="stroke-dashoffset" values="0;-18" dur="1.5s" repeatCount="indefinite"/>
+</line>
+<circle cx="250" cy="100" r="3" fill="#9D7ECF" opacity="0.6">
+<animate attributeName="cx" values="232;268" dur="1.5s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0.8;0.2;0.8" dur="1.5s" repeatCount="indefinite"/>
+</circle>
 
-    <!-- Node 3: ARIA IDE -->
-    <g>
-      <rect class="panel-box" x="530" y="20" width="220" height="140" rx="8" />
-      <text class="system-title" x="550" y="55">💻 ARIA IDE [EDITOR]</text>
-      <text class="system-desc" x="550" y="80">AI-native desktop editor core</text>
-      <text class="system-desc" x="550" y="98">integrating 100+ AI models</text>
-      <text class="system-desc" x="550" y="116">and MCP server workspace.</text>
-      <text class="system-tag" x="550" y="142">&gt;_ Electron · Monaco · React</text>
-      <!-- Pulse dot -->
-      <circle cx="545" cy="51" r="3" fill="#FF79C6" />
-    </g>
-  </svg>
+<!-- Center-to-Right connector -->
+<line x1="490" y1="100" x2="530" y2="100" stroke="url(#con2)" stroke-width="2" stroke-dasharray="6 3" filter="url(#sg)">
+<animate attributeName="stroke-dashoffset" values="0;-18" dur="1.5s" repeatCount="indefinite"/>
+</line>
+<circle cx="510" cy="100" r="3" fill="#00F0FF" opacity="0.6">
+<animate attributeName="cx" values="492;528" dur="1.5s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0.8;0.2;0.8" dur="1.5s" repeatCount="indefinite"/>
+</circle>
+
+<!-- ===== NODE 1: SARA LLM ===== -->
+<g>
+<rect x="15" y="25" width="215" height="150" rx="8" fill="#0D0B1E" stroke="#2A1F4E" stroke-width="1.5"/>
+<!-- Top accent line -->
+<line x1="25" y1="25" x2="100" y2="25" stroke="#9D7ECF" stroke-width="2.5"/>
+<!-- Status dot -->
+<circle cx="30" cy="55" r="4" fill="#9D7ECF" filter="url(#sg)">
+<animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+</circle>
+<!-- Title -->
+<text x="42" y="59" font-family="monospace" font-size="13" font-weight="bold" fill="#C9B8FF">SARA LLM [0.5B]</text>
+<!-- Desc -->
+<text x="30" y="82" font-family="sans-serif" font-size="10.5" fill="#8A7AB5">Sequential distillation pipeline</text>
+<text x="30" y="97" font-family="sans-serif" font-size="10.5" fill="#8A7AB5">from Qwen2.5-4B on NVIDIA H200</text>
+<text x="30" y="112" font-family="sans-serif" font-size="10.5" fill="#8A7AB5">optimized for quick inference.</text>
+<!-- Tech tag -->
+<text x="30" y="140" font-family="monospace" font-size="9.5" fill="#8BE9FD">▸ PyTorch · H200 · FIM</text>
+<!-- Bottom mini progress bar -->
+<rect x="30" y="155" width="100" height="3" rx="1.5" fill="#1A1535"/>
+<rect x="30" y="155" width="65" height="3" rx="1.5" fill="#9D7ECF" opacity="0.6">
+<animate attributeName="width" values="40;85;65" dur="4s" repeatCount="indefinite"/>
+</rect>
+</g>
+
+<!-- ===== NODE 2: SARA AI VOICE ===== -->
+<g>
+<rect x="273" y="25" width="215" height="150" rx="8" fill="#0D0B1E" stroke="#2A1F4E" stroke-width="1.5"/>
+<line x1="283" y1="25" x2="358" y2="25" stroke="#00F0FF" stroke-width="2.5"/>
+<circle cx="288" cy="55" r="4" fill="#8BE9FD" filter="url(#sg)">
+<animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+</circle>
+<text x="300" y="59" font-family="monospace" font-size="13" font-weight="bold" fill="#C9B8FF">SARA AI [VOICE]</text>
+<text x="288" y="82" font-family="sans-serif" font-size="10.5" fill="#8A7AB5">Autonomous voice-agent layer</text>
+<text x="288" y="97" font-family="sans-serif" font-size="10.5" fill="#8A7AB5">with 18 native tool extensions</text>
+<text x="288" y="112" font-family="sans-serif" font-size="10.5" fill="#8A7AB5">and persistent memory RAG.</text>
+<text x="288" y="140" font-family="monospace" font-size="9.5" fill="#8BE9FD">▸ LlamaIndex · Whisper</text>
+<rect x="288" y="155" width="100" height="3" rx="1.5" fill="#1A1535"/>
+<rect x="288" y="155" width="72" height="3" rx="1.5" fill="#00F0FF" opacity="0.6">
+<animate attributeName="width" values="50;90;72" dur="3.5s" repeatCount="indefinite"/>
+</rect>
+</g>
+
+<!-- ===== NODE 3: ARIA IDE ===== -->
+<g>
+<rect x="533" y="25" width="215" height="150" rx="8" fill="#0D0B1E" stroke="#2A1F4E" stroke-width="1.5"/>
+<line x1="543" y1="25" x2="618" y2="25" stroke="#FF79C6" stroke-width="2.5"/>
+<circle cx="548" cy="55" r="4" fill="#FF79C6" filter="url(#sg)">
+<animate attributeName="opacity" values="0.4;1;0.4" dur="2.2s" repeatCount="indefinite"/>
+</circle>
+<text x="560" y="59" font-family="monospace" font-size="13" font-weight="bold" fill="#C9B8FF">ARIA IDE [EDITOR]</text>
+<text x="548" y="82" font-family="sans-serif" font-size="10.5" fill="#8A7AB5">AI-native desktop editor core</text>
+<text x="548" y="97" font-family="sans-serif" font-size="10.5" fill="#8A7AB5">integrating 100+ AI models</text>
+<text x="548" y="112" font-family="sans-serif" font-size="10.5" fill="#8A7AB5">and MCP server workspace.</text>
+<text x="548" y="140" font-family="monospace" font-size="9.5" fill="#8BE9FD">▸ Electron · Monaco · React</text>
+<rect x="548" y="155" width="100" height="3" rx="1.5" fill="#1A1535"/>
+<rect x="548" y="155" width="80" height="3" rx="1.5" fill="#FF79C6" opacity="0.6">
+<animate attributeName="width" values="55;95;80" dur="4.5s" repeatCount="indefinite"/>
+</rect>
+</g>
+
+<!-- Corner HUD brackets -->
+<g stroke="#00F0FF" stroke-width="1" opacity="0.2">
+<path d="M5 15L5 5L15 5" fill="none"/>
+<path d="M755 15L755 5L745 5" fill="none"/>
+<path d="M5 185L5 195L15 195" fill="none"/>
+<path d="M755 185L755 195L745 195" fill="none"/>
+</g>
+</svg>

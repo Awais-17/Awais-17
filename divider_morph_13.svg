@@ -1,20 +1,45 @@
-<svg viewBox="0 0 800 50" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:50px;">
-    <style>
-      @keyframes rot-hex-div {
-        0% { transform: rotate(0deg) scale(1); }
-        50% { transform: rotate(180deg) scale(1.2); }
-        100% { transform: rotate(360deg) scale(1); }
-      }
-      @keyframes exp-circle-div {
-        0%, 100% { r: 3px; stroke-width: 1.5; opacity: 0.4; }
-        50% { r: 9px; stroke-width: 2.5; opacity: 1; }
-      }
-    </style>
-    <path d="M 0 25 H 370" stroke="#251B47" stroke-width="1.5" stroke-dasharray="6 4" />
-    <path d="M 430 25 H 800" stroke="#251B47" stroke-width="1.5" stroke-dasharray="6 4" />
-    <g transform="translate(400, 25)">
-      <!-- Morphing Rotating Hexagon -->
-      <polygon points="-12,-7 -6,-17 6,-17 12,-7 6,3 -6,3" stroke="#9D7ECF" stroke-width="2" fill="none" style="transform-origin: 0px -7px; animation: rot-hex-div 8s linear infinite;" />
-      <circle cx="0" cy="-7" r="4" stroke="#8BE9FD" fill="none" style="animation: exp-circle-div 3s infinite ease-in-out;" />
-    </g>
-  </svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 800 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<filter id="gm13" x="-20%" y="-20%" width="140%" height="140%">
+<feGaussianBlur stdDeviation="2.5" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+</defs>
+
+<!-- Rails -->
+<line x1="0" y1="30" x2="350" y2="30" stroke="#251B47" stroke-width="1" stroke-dasharray="6 4"/>
+<line x1="450" y1="30" x2="800" y2="30" stroke="#251B47" stroke-width="1" stroke-dasharray="6 4"/>
+
+<!-- Outer ring spinning -->
+<circle cx="400" cy="30" r="20" stroke="#FF79C6" stroke-width="1" fill="none" stroke-dasharray="10 8 4 8">
+<animateTransform attributeName="transform" type="rotate" from="0 400 30" to="360 400 30" dur="12s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0.25;0.6;0.25" dur="4s" repeatCount="indefinite"/>
+</circle>
+
+<!-- Middle ring -->
+<circle cx="400" cy="30" r="14" stroke="#9D7ECF" stroke-width="1.2" fill="none" stroke-dasharray="6 3">
+<animateTransform attributeName="transform" type="rotate" from="360 400 30" to="0 400 30" dur="8s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s" repeatCount="indefinite"/>
+</circle>
+
+<!-- Inner triangle (rotating) -->
+<polygon points="400,18 408,36 392,36" stroke="#00F0FF" stroke-width="1.5" fill="none" filter="url(#gm13)">
+<animateTransform attributeName="transform" type="rotate" from="0 400 30" to="360 400 30" dur="6s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0.4;0.9;0.4" dur="2s" repeatCount="indefinite"/>
+</polygon>
+
+<!-- Core -->
+<circle cx="400" cy="30" r="3" fill="#00F0FF" opacity="0.7" filter="url(#gm13)">
+<animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite"/>
+</circle>
+<circle cx="400" cy="30" r="1.2" fill="#FFF" opacity="0.9"/>
+
+<!-- Side arrows pointing in -->
+<path d="M355 30L365 25L365 35Z" fill="#9D7ECF" opacity="0.3">
+<animate attributeName="opacity" values="0.2;0.5;0.2" dur="2s" repeatCount="indefinite"/>
+</path>
+<path d="M445 30L435 25L435 35Z" fill="#9D7ECF" opacity="0.3">
+<animate attributeName="opacity" values="0.2;0.5;0.2" dur="2s" begin="1s" repeatCount="indefinite"/>
+</path>
+</svg>

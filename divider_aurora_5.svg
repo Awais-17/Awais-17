@@ -1,20 +1,51 @@
-<svg viewBox="0 0 800 50" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:50px;">
-    <defs>
-      <linearGradient id="aurora-grad-1" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#9D7ECF" stop-opacity="0.0" />
-        <stop offset="50%" stop-color="#C9B8FF" stop-opacity="0.6" />
-        <stop offset="100%" stop-color="#7C6FA0" stop-opacity="0.0" />
-      </linearGradient>
-      <linearGradient id="aurora-grad-2" x1="100%" y1="0%" x2="0%" y2="0%">
-        <stop offset="0%" stop-color="#FF79C6" stop-opacity="0.0" />
-        <stop offset="50%" stop-color="#8BE9FD" stop-opacity="0.5" />
-        <stop offset="100%" stop-color="#9D7ECF" stop-opacity="0.0" />
-      </linearGradient>
-    </defs>
-    <path d="M 0 25 Q 200 5 400 25 T 800 25" fill="none" stroke="url(#aurora-grad-1)" stroke-width="3">
-      <animate attributeName="d" dur="8s" repeatCount="indefinite" values="M 0 25 Q 200 5 400 25 T 800 25; M 0 25 Q 200 45 400 25 T 800 25; M 0 25 Q 200 5 400 25 T 800 25" />
-    </path>
-    <path d="M 0 25 Q 200 45 400 25 T 800 25" fill="none" stroke="url(#aurora-grad-2)" stroke-width="1.5">
-      <animate attributeName="d" dur="6s" repeatCount="indefinite" values="M 0 25 Q 200 45 400 25 T 800 25; M 0 25 Q 200 5 400 25 T 800 25; M 0 25 Q 200 45 400 25 T 800 25" />
-    </path>
-  </svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 800 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="g5a" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#7B2FBE" stop-opacity="0"/>
+<stop offset="50%" stop-color="#00F0FF" stop-opacity="0.8"/>
+<stop offset="100%" stop-color="#7B2FBE" stop-opacity="0"/>
+</linearGradient>
+<filter id="gl5" x="-10%" y="-30%" width="120%" height="160%">
+<feGaussianBlur stdDeviation="2.5" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+</defs>
+
+<!-- Angular HUD bar frame (inspired by ref image - chevron style) -->
+<path d="M0 30H280L300 15H500L520 30H800" stroke="#00F0FF" stroke-width="1.2" opacity="0.35"/>
+<path d="M0 32H280L300 47H500L520 32H800" stroke="#00F0FF" stroke-width="0.6" opacity="0.15"/>
+
+<!-- Inner chevron detail -->
+<path d="M310 18H490" stroke="#00F0FF" stroke-width="2" opacity="0.5" stroke-dasharray="8 4">
+<animate attributeName="stroke-dashoffset" values="0;-24" dur="2s" repeatCount="indefinite"/>
+</path>
+<path d="M310 44H490" stroke="#7B2FBE" stroke-width="1" opacity="0.3" stroke-dasharray="4 8">
+<animate attributeName="stroke-dashoffset" values="0;24" dur="2s" repeatCount="indefinite"/>
+</path>
+
+<!-- Chevron arrow tips -->
+<path d="M275 30L295 15" stroke="#00F0FF" stroke-width="1.5" opacity="0.5"/>
+<path d="M525 30L505 15" stroke="#00F0FF" stroke-width="1.5" opacity="0.5"/>
+<path d="M275 32L295 47" stroke="#00F0FF" stroke-width="0.8" opacity="0.25"/>
+<path d="M525 32L505 47" stroke="#00F0FF" stroke-width="0.8" opacity="0.25"/>
+
+<!-- Center glow bar -->
+<rect x="320" y="26" width="160" height="10" rx="5" fill="url(#g5a)" opacity="0.4" filter="url(#gl5)">
+<animate attributeName="opacity" values="0.2;0.6;0.2" dur="3s" repeatCount="indefinite"/>
+</rect>
+
+<!-- Dot indicators -->
+<circle cx="300" cy="30" r="3" fill="#00F0FF" opacity="0.7">
+<animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+</circle>
+<circle cx="500" cy="30" r="3" fill="#00F0FF" opacity="0.7">
+<animate attributeName="opacity" values="0.4;1;0.4" dur="2s" begin="1s" repeatCount="indefinite"/>
+</circle>
+
+<!-- Side data dashes -->
+<g opacity="0.2" stroke="#00F0FF" stroke-width="1">
+<line x1="50" y1="28" x2="80" y2="28"/><line x1="100" y1="30" x2="140" y2="30"/>
+<line x1="660" y1="30" x2="700" y2="30"/><line x1="720" y1="28" x2="750" y2="28"/>
+</g>
+</svg>

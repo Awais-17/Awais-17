@@ -1,20 +1,52 @@
-<svg viewBox="0 0 800 50" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:50px;">
-    <defs>
-      <linearGradient id="aurora-grad-1" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#9D7ECF" stop-opacity="0.0" />
-        <stop offset="50%" stop-color="#C9B8FF" stop-opacity="0.6" />
-        <stop offset="100%" stop-color="#7C6FA0" stop-opacity="0.0" />
-      </linearGradient>
-      <linearGradient id="aurora-grad-2" x1="100%" y1="0%" x2="0%" y2="0%">
-        <stop offset="0%" stop-color="#FF79C6" stop-opacity="0.0" />
-        <stop offset="50%" stop-color="#8BE9FD" stop-opacity="0.5" />
-        <stop offset="100%" stop-color="#9D7ECF" stop-opacity="0.0" />
-      </linearGradient>
-    </defs>
-    <path d="M 0 25 Q 200 5 400 25 T 800 25" fill="none" stroke="url(#aurora-grad-1)" stroke-width="3">
-      <animate attributeName="d" dur="8s" repeatCount="indefinite" values="M 0 25 Q 200 5 400 25 T 800 25; M 0 25 Q 200 45 400 25 T 800 25; M 0 25 Q 200 5 400 25 T 800 25" />
-    </path>
-    <path d="M 0 25 Q 200 45 400 25 T 800 25" fill="none" stroke="url(#aurora-grad-2)" stroke-width="1.5">
-      <animate attributeName="d" dur="6s" repeatCount="indefinite" values="M 0 25 Q 200 45 400 25 T 800 25; M 0 25 Q 200 5 400 25 T 800 25; M 0 25 Q 200 45 400 25 T 800 25" />
-    </path>
-  </svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 800 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="g10" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#00F0FF" stop-opacity="0"/>
+<stop offset="50%" stop-color="#9D7ECF" stop-opacity="0.8"/>
+<stop offset="100%" stop-color="#00F0FF" stop-opacity="0"/>
+</linearGradient>
+<filter id="gl10" x="-10%" y="-30%" width="120%" height="160%">
+<feGaussianBlur stdDeviation="2" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+</defs>
+
+<!-- Double parallel HUD rail -->
+<line x1="0" y1="25" x2="800" y2="25" stroke="#00F0FF" stroke-width="0.6" opacity="0.2"/>
+<line x1="0" y1="35" x2="800" y2="35" stroke="#00F0FF" stroke-width="0.6" opacity="0.2"/>
+
+<!-- Center hexagonal hub -->
+<polygon points="400,15 415,22 415,38 400,45 385,38 385,22" stroke="#9D7ECF" stroke-width="1.5" fill="none" opacity="0.5">
+<animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+</polygon>
+<polygon points="400,19 411,24 411,36 400,41 389,36 389,24" stroke="#00F0FF" stroke-width="0.8" fill="none" opacity="0.4">
+<animateTransform attributeName="transform" type="rotate" from="0 400 30" to="360 400 30" dur="12s" repeatCount="indefinite"/>
+</polygon>
+<circle cx="400" cy="30" r="4" fill="#9D7ECF" opacity="0.7">
+<animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+</circle>
+
+<!-- Left angular wing -->
+<path d="M385 22L340 22L320 30L340 38L385 38" stroke="#00F0FF" stroke-width="1" opacity="0.35"/>
+<path d="M320 30L180 30" stroke="url(#g10)" stroke-width="1.5" stroke-dasharray="6 3" filter="url(#gl10)">
+<animate attributeName="stroke-dashoffset" values="0;-18" dur="1.5s" repeatCount="indefinite"/>
+</path>
+<path d="M180 30L170 24L80 24" stroke="#00F0FF" stroke-width="0.8" opacity="0.25"/>
+<path d="M180 30L170 36L80 36" stroke="#00F0FF" stroke-width="0.5" opacity="0.15"/>
+
+<!-- Right angular wing -->
+<path d="M415 22L460 22L480 30L460 38L415 38" stroke="#00F0FF" stroke-width="1" opacity="0.35"/>
+<path d="M480 30L620 30" stroke="url(#g10)" stroke-width="1.5" stroke-dasharray="6 3" filter="url(#gl10)">
+<animate attributeName="stroke-dashoffset" values="0;18" dur="1.5s" repeatCount="indefinite"/>
+</path>
+<path d="M620 30L630 24L720 24" stroke="#00F0FF" stroke-width="0.8" opacity="0.25"/>
+<path d="M620 30L630 36L720 36" stroke="#00F0FF" stroke-width="0.5" opacity="0.15"/>
+
+<!-- Tick marks -->
+<g opacity="0.2" stroke="#9D7ECF" stroke-width="0.8">
+<line x1="100" y1="22" x2="100" y2="38"/><line x1="200" y1="22" x2="200" y2="38"/>
+<line x1="600" y1="22" x2="600" y2="38"/><line x1="700" y1="22" x2="700" y2="38"/>
+</g>
+</svg>
