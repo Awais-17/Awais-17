@@ -1,0 +1,47 @@
+<svg viewBox="0 0 760 90" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 760px; border-radius: 8px; background: #0D0B1E; border: 1.5px solid #2A1F4E;">
+    <style>
+      @keyframes slideInLeft {
+        0% { transform: translateX(-150px); opacity: 0; }
+        100% { transform: translateX(0); opacity: 1; }
+      }
+      @keyframes slideInRight {
+        0% { transform: translateX(150px); opacity: 0; }
+        100% { transform: translateX(0); opacity: 1; }
+      }
+      @keyframes slideInCenter {
+        0% { transform: scaleX(0); opacity: 0; }
+        100% { transform: scaleX(1); opacity: 1; }
+      }
+      .slide-left {
+        animation: slideInLeft 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      .slide-right {
+        animation: slideInRight 2.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      .slide-center {
+        animation: slideInCenter 1.5s ease-out forwards;
+        transform-origin: center;
+      }
+    </style>
+    <!-- Background grid lines -->
+    <path d="M 0 45 H 760" stroke="#1F143D" stroke-width="1.5" />
+    
+    <!-- Staggered horizontal slide ins -->
+    <g class="slide-left">
+      <rect x="30" y="20" width="180" height="50" rx="6" fill="#140E2D" stroke="#9D7ECF" stroke-width="1" />
+      <text x="120" y="42" font-family="'JetBrains Mono', monospace" font-size="11" fill="#C9B8FF" text-anchor="middle" font-weight="bold">SYSTEM LOAD</text>
+      <text x="120" y="58" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8BE9FD" text-anchor="middle">NOMINAL [98%]</text>
+    </g>
+
+    <g class="slide-center">
+      <rect x="290" y="20" width="180" height="50" rx="6" fill="#140E2D" stroke="#FF79C6" stroke-width="1" />
+      <text x="380" y="42" font-family="'JetBrains Mono', monospace" font-size="11" fill="#C9B8FF" text-anchor="middle" font-weight="bold">ACTIVE KERNEL</text>
+      <text x="380" y="58" font-family="'JetBrains Mono', monospace" font-size="10" fill="#F1FA8C" text-anchor="middle">SARA_V2.5.4</text>
+    </g>
+
+    <g class="slide-right">
+      <rect x="550" y="20" width="180" height="50" rx="6" fill="#140E2D" stroke="#8BE9FD" stroke-width="1" />
+      <text x="640" y="42" font-family="'JetBrains Mono', monospace" font-size="11" fill="#C9B8FF" text-anchor="middle" font-weight="bold">NETWORK SPEED</text>
+      <text x="640" y="58" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FF79C6" text-anchor="middle">10.4 GBPS</text>
+    </g>
+  </svg>

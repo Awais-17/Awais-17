@@ -1,0 +1,20 @@
+<svg viewBox="0 0 800 50" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:50px;">
+    <style>
+      @keyframes rot-hex-div {
+        0% { transform: rotate(0deg) scale(1); }
+        50% { transform: rotate(180deg) scale(1.2); }
+        100% { transform: rotate(360deg) scale(1); }
+      }
+      @keyframes exp-circle-div {
+        0%, 100% { r: 3px; stroke-width: 1.5; opacity: 0.4; }
+        50% { r: 9px; stroke-width: 2.5; opacity: 1; }
+      }
+    </style>
+    <path d="M 0 25 H 370" stroke="#251B47" stroke-width="1.5" stroke-dasharray="6 4" />
+    <path d="M 430 25 H 800" stroke="#251B47" stroke-width="1.5" stroke-dasharray="6 4" />
+    <g transform="translate(400, 25)">
+      <!-- Morphing Rotating Hexagon -->
+      <polygon points="-12,-7 -6,-17 6,-17 12,-7 6,3 -6,3" stroke="#9D7ECF" stroke-width="2" fill="none" style="transform-origin: 0px -7px; animation: rot-hex-div 8s linear infinite;" />
+      <circle cx="0" cy="-7" r="4" stroke="#8BE9FD" fill="none" style="animation: exp-circle-div 3s infinite ease-in-out;" />
+    </g>
+  </svg>

@@ -1,0 +1,83 @@
+<svg viewBox="0 0 760 180" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 760px; margin: 15px 0;">
+    <style>
+      .arc-link {
+        stroke: #2A1F4E;
+        stroke-width: 1.5;
+        stroke-dasharray: 4 4;
+      }
+      .panel-box {
+        fill: #0D0B1E;
+        stroke: #2A1F4E;
+        stroke-width: 1.5;
+        transition: all 0.3s ease;
+      }
+      .panel-box:hover {
+        stroke: #9D7ECF;
+        fill: #14102B;
+        cursor: pointer;
+      }
+      .system-title {
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 700;
+        font-size: 13px;
+        fill: #C9B8FF;
+      }
+      .system-desc {
+        font-family: sans-serif;
+        font-size: 11px;
+        fill: #8A7AB5;
+      }
+      .system-tag {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 9.5px;
+        fill: #8BE9FD;
+      }
+      @keyframes cycleglow {
+        0%, 100% { stroke: #2A1F4E; }
+        50% { stroke: #9D7ECF; }
+      }
+      .glowing-connector {
+        animation: cycleglow 4s infinite;
+      }
+    </style>
+
+    <!-- Connectors -->
+    <path class="arc-link glowing-connector" d="M 230 90 H 290" />
+    <path class="arc-link glowing-connector" d="M 470 90 H 530" />
+
+    <!-- Node 1: SARA LLM -->
+    <g>
+      <rect class="panel-box" x="10" y="20" width="220" height="140" rx="8" />
+      <text class="system-title" x="30" y="55">🧠 SARA LLM [0.5B]</text>
+      <text class="system-desc" x="30" y="80">Sequential distillation pipeline</text>
+      <text class="system-desc" x="30" y="98">from Qwen2.5-4B on NVIDIA H200</text>
+      <text class="system-desc" x="30" y="116">optimized for quick inference.</text>
+      <text class="system-tag" x="30" y="142">&gt;_ PyTorch · H200 · FIM</text>
+      <!-- Pulse dot -->
+      <circle cx="25" cy="51" r="3" fill="#9D7ECF" />
+    </g>
+
+    <!-- Node 2: SARA AI VOICE -->
+    <g>
+      <rect class="panel-box" x="290" y="20" width="220" height="140" rx="8" />
+      <text class="system-title" x="310" y="55">🎙️ SARA AI [VOICE]</text>
+      <text class="system-desc" x="310" y="80">Autonomous voice-agent layer</text>
+      <text class="system-desc" x="310" y="98">with 18 native tool extensions</text>
+      <text class="system-desc" x="310" y="116">and persistent memory RAG.</text>
+      <text class="system-tag" x="310" y="142">&gt;_ LlamaIndex · Whisper</text>
+      <!-- Pulse dot -->
+      <circle cx="305" cy="51" r="3" fill="#8BE9FD" />
+    </g>
+
+    <!-- Node 3: ARIA IDE -->
+    <g>
+      <rect class="panel-box" x="530" y="20" width="220" height="140" rx="8" />
+      <text class="system-title" x="550" y="55">💻 ARIA IDE [EDITOR]</text>
+      <text class="system-desc" x="550" y="80">AI-native desktop editor core</text>
+      <text class="system-desc" x="550" y="98">integrating 100+ AI models</text>
+      <text class="system-desc" x="550" y="116">and MCP server workspace.</text>
+      <text class="system-tag" x="550" y="142">&gt;_ Electron · Monaco · React</text>
+      <!-- Pulse dot -->
+      <circle cx="545" cy="51" r="3" fill="#FF79C6" />
+    </g>
+  </svg>

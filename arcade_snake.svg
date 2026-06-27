@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 340 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<filter id="glo" x="-30%" y="-30%" width="160%" height="160%">
+<feGaussianBlur stdDeviation="3" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="sglo" x="-20%" y="-20%" width="140%" height="140%">
+<feGaussianBlur stdDeviation="1.5" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+</defs>
+
+<!-- Background -->
+<rect width="340" height="190" fill="#07050F"/>
+
+<!-- Grid -->
+<path d="M0 30H340M0 60H340M0 90H340M0 120H340M0 150H340" stroke="#00F3FF" stroke-width="0.5" opacity="0.08"/>
+<path d="M40 0V190M80 0V190M120 0V190M160 0V190M200 0V190M240 0V190M280 0V190M320 0V190" stroke="#00F3FF" stroke-width="0.5" opacity="0.08"/>
+
+<!-- Arena border -->
+<rect x="6" y="6" width="328" height="178" stroke="#00F3FF" stroke-width="1.5" fill="none" opacity="0.7"/>
+
+<!-- Outer border -->
+<rect x="1" y="1" width="338" height="188" stroke="#00F3FF" stroke-width="0.5" fill="none" opacity="0.3"/>
+
+<!-- SNAKE PATH - outer glow body -->
+<path d="M40 40H260V100H180V140H100V80H40Z" stroke="#00F3FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.3" filter="url(#glo)" stroke-dasharray="55 345">
+<animate attributeName="stroke-dashoffset" values="400;0" dur="5s" repeatCount="indefinite"/>
+</path>
+
+<!-- SNAKE PATH - main body -->
+<path d="M40 40H260V100H180V140H100V80H40Z" stroke="#00F3FF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-dasharray="55 345">
+<animate attributeName="stroke-dashoffset" values="400;0" dur="5s" repeatCount="indefinite"/>
+</path>
+
+<!-- SNAKE PATH - bright inner core -->
+<path d="M40 40H260V100H180V140H100V80H40Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-dasharray="55 345">
+<animate attributeName="stroke-dashoffset" values="400;0" dur="5s" repeatCount="indefinite"/>
+</path>
+
+<!-- SNAKE HEAD dot - follows along the path -->
+<circle cx="0" cy="0" r="5" fill="#00F3FF" filter="url(#sglo)">
+<animateMotion dur="5s" repeatCount="indefinite" path="M40 40H260V100H180V140H100V80H40Z"/>
+</circle>
+<circle cx="0" cy="0" r="2.5" fill="#FFF">
+<animateMotion dur="5s" repeatCount="indefinite" path="M40 40H260V100H180V140H100V80H40Z"/>
+</circle>
+
+<!-- FOOD 1 - pulsing orange -->
+<circle cx="220" cy="70" r="5" fill="#FF7B00" filter="url(#sglo)">
+<animate attributeName="r" values="4;6;4" dur="1.2s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0.7;1;0.7" dur="1.2s" repeatCount="indefinite"/>
+</circle>
+<circle cx="220" cy="70" r="2" fill="#FFF" opacity="0.8">
+<animate attributeName="r" values="1.5;2.5;1.5" dur="1.2s" repeatCount="indefinite"/>
+</circle>
+
+<!-- FOOD 2 - pulsing cyan -->
+<circle cx="80" cy="120" r="4.5" fill="#00F3FF" filter="url(#sglo)">
+<animate attributeName="r" values="3.5;5.5;3.5" dur="1.2s" begin="0.6s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0.6;1;0.6" dur="1.2s" begin="0.6s" repeatCount="indefinite"/>
+</circle>
+<circle cx="80" cy="120" r="1.8" fill="#FFF" opacity="0.8">
+<animate attributeName="r" values="1.2;2.2;1.2" dur="1.2s" begin="0.6s" repeatCount="indefinite"/>
+</circle>
+
+<!-- FOOD 3 - pulsing pink -->
+<circle cx="150" cy="55" r="4" fill="#FF2D78" filter="url(#sglo)">
+<animate attributeName="r" values="3;5;3" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0.5;0.9;0.5" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+</circle>
+
+<!-- Score / Stats HUD -->
+<text x="15" y="19" font-family="monospace" font-size="9" font-weight="bold" fill="#00F3FF">LEN: 12</text>
+<text x="280" y="19" font-family="monospace" font-size="9" font-weight="bold" fill="#00F3FF">FPS: 60</text>
+
+<!-- Status bar bottom -->
+<text x="15" y="183" font-family="monospace" font-size="7" fill="#00F3FF" opacity="0.35">SNAKE_RETRO.SYS</text>
+<text x="325" y="183" text-anchor="end" font-family="monospace" font-size="7" fill="#00F3FF" opacity="0.35">ACTIVE</text>
+
+<!-- Blinking status dot -->
+<circle cx="312" cy="180" r="2" fill="#00FF88">
+<animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/>
+</circle>
+
+<!-- HUD corners -->
+<g stroke="#00F3FF" stroke-width="1" opacity="0.25">
+<path d="M10 15L10 8L17 8" fill="none"/>
+<path d="M330 15L330 8L323 8" fill="none"/>
+<path d="M10 175L10 182L17 182" fill="none"/>
+<path d="M330 175L330 182L323 182" fill="none"/>
+</g>
+
+</svg>

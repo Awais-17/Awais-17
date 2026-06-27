@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 900 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<radialGradient id="space-core" cx="50%" cy="50%" r="60%">
+<stop offset="0%" stop-color="#0A0A1A"/>
+<stop offset="40%" stop-color="#060618"/>
+<stop offset="100%" stop-color="#020208"/>
+</radialGradient>
+<radialGradient id="vortex-glow" cx="50%" cy="50%" r="35%">
+<stop offset="0%" stop-color="#00F0FF" stop-opacity="0.12"/>
+<stop offset="50%" stop-color="#7B2FBE" stop-opacity="0.06"/>
+<stop offset="100%" stop-color="#020208" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="accretion" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#FF2D78" stop-opacity="0"/>
+<stop offset="25%" stop-color="#FF2D78" stop-opacity="0.5"/>
+<stop offset="50%" stop-color="#00F0FF" stop-opacity="0.9"/>
+<stop offset="75%" stop-color="#7B2FBE" stop-opacity="0.5"/>
+<stop offset="100%" stop-color="#7B2FBE" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="accretion2" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#7B2FBE" stop-opacity="0"/>
+<stop offset="30%" stop-color="#00F0FF" stop-opacity="0.4"/>
+<stop offset="70%" stop-color="#FF2D78" stop-opacity="0.4"/>
+<stop offset="100%" stop-color="#FF2D78" stop-opacity="0"/>
+</linearGradient>
+<filter id="txt-glow" x="-15%" y="-15%" width="130%" height="130%">
+<feGaussianBlur stdDeviation="4" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="neon" x="-20%" y="-20%" width="140%" height="140%">
+<feGaussianBlur stdDeviation="3" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="hglow" x="-30%" y="-30%" width="160%" height="160%">
+<feGaussianBlur stdDeviation="7" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="sglow" x="-50%" y="-50%" width="200%" height="200%">
+<feGaussianBlur stdDeviation="2" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+</defs>
+
+<!-- BACKGROUND -->
+<rect width="900" height="320" fill="url(#space-core)"/>
+<rect width="900" height="320" fill="url(#vortex-glow)"/>
+
+<!-- Subtle grid -->
+<g opacity="0.035">
+<path d="M0 40H900M0 80H900M0 120H900M0 160H900M0 200H900M0 240H900M0 280H900" stroke="#00F0FF" stroke-width="0.5"/>
+<path d="M90 0V320M180 0V320M270 0V320M360 0V320M450 0V320M540 0V320M630 0V320M720 0V320M810 0V320" stroke="#00F0FF" stroke-width="0.5"/>
+</g>
+
+<!-- TWINKLING STAR FIELD -->
+<g filter="url(#sglow)">
+<circle cx="45" cy="30" r="1" fill="#FFF"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.2s" repeatCount="indefinite"/></circle>
+<circle cx="120" cy="280" r="0.8" fill="#FFF"><animate attributeName="opacity" values="0.8;0.15;0.8" dur="4.1s" repeatCount="indefinite"/></circle>
+<circle cx="200" cy="45" r="1.2" fill="#FFF"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.8s" repeatCount="indefinite"/></circle>
+<circle cx="310" cy="290" r="0.7" fill="#FFF"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="680" cy="35" r="1" fill="#FFF"><animate attributeName="opacity" values="0.4;0.95;0.4" dur="3.5s" repeatCount="indefinite"/></circle>
+<circle cx="770" cy="270" r="0.9" fill="#FFF"><animate attributeName="opacity" values="0.7;0.1;0.7" dur="4.5s" repeatCount="indefinite"/></circle>
+<circle cx="850" cy="80" r="1.1" fill="#FFF"><animate attributeName="opacity" values="0.2;0.85;0.2" dur="3.8s" repeatCount="indefinite"/></circle>
+<circle cx="500" cy="18" r="0.6" fill="#FFF"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="4.8s" repeatCount="indefinite"/></circle>
+<circle cx="60" cy="170" r="0.8" fill="#FFF"><animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/></circle>
+<circle cx="840" cy="180" r="0.7" fill="#FFF"><animate attributeName="opacity" values="0.5;0.9;0.5" dur="2.5s" repeatCount="indefinite"/></circle>
+<circle cx="400" cy="300" r="0.9" fill="#FFF"><animate attributeName="opacity" values="0.15;0.7;0.15" dur="3.4s" repeatCount="indefinite"/></circle>
+<circle cx="555" cy="42" r="0.7" fill="#FFF"><animate attributeName="opacity" values="0.4;0.8;0.4" dur="4.3s" repeatCount="indefinite"/></circle>
+<!-- Colored accent stars -->
+<circle cx="160" cy="120" r="1.5" fill="#00F0FF"><animate attributeName="opacity" values="0.1;0.6;0.1" dur="4s" repeatCount="indefinite"/></circle>
+<circle cx="730" cy="140" r="1.5" fill="#7B2FBE"><animate attributeName="opacity" values="0.1;0.55;0.1" dur="3.6s" repeatCount="indefinite"/></circle>
+<circle cx="390" cy="305" r="1.3" fill="#FF2D78"><animate attributeName="opacity" values="0.1;0.45;0.1" dur="5.2s" repeatCount="indefinite"/></circle>
+</g>
+
+<!-- NEURAL CONSTELLATION LEFT -->
+<g opacity="0.3" filter="url(#neon)">
+<circle cx="70" cy="60" r="2.5" fill="#00F0FF"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="3s" repeatCount="indefinite"/></circle>
+<circle cx="140" cy="95" r="2" fill="#00F0FF"><animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/></circle>
+<circle cx="50" cy="150" r="1.8" fill="#7B2FBE"><animate attributeName="opacity" values="0.4;0.8;0.4" dur="3.5s" repeatCount="indefinite"/></circle>
+<circle cx="180" cy="180" r="2.2" fill="#00F0FF"><animate attributeName="opacity" values="0.2;0.7;0.2" dur="4s" repeatCount="indefinite"/></circle>
+<circle cx="100" cy="240" r="1.5" fill="#7B2FBE"><animate attributeName="opacity" values="0.6;1;0.6" dur="2.8s" repeatCount="indefinite"/></circle>
+<circle cx="30" cy="220" r="1.8" fill="#FF2D78"><animate attributeName="opacity" values="0.2;0.6;0.2" dur="4.5s" repeatCount="indefinite"/></circle>
+<line x1="70" y1="60" x2="140" y2="95" stroke="#00F0FF" stroke-width="0.7" opacity="0.35"/>
+<line x1="140" y1="95" x2="50" y2="150" stroke="#00F0FF" stroke-width="0.5" opacity="0.25"/>
+<line x1="50" y1="150" x2="180" y2="180" stroke="#7B2FBE" stroke-width="0.6" opacity="0.25"/>
+<line x1="180" y1="180" x2="100" y2="240" stroke="#00F0FF" stroke-width="0.5" opacity="0.2"/>
+<line x1="70" y1="60" x2="180" y2="180" stroke="#7B2FBE" stroke-width="0.35" opacity="0.15"/>
+<line x1="100" y1="240" x2="30" y2="220" stroke="#FF2D78" stroke-width="0.4" opacity="0.2"/>
+<line x1="50" y1="150" x2="30" y2="220" stroke="#7B2FBE" stroke-width="0.35" opacity="0.15"/>
+</g>
+
+<!-- NEURAL CONSTELLATION RIGHT -->
+<g opacity="0.3" filter="url(#neon)">
+<circle cx="780" cy="50" r="2" fill="#7B2FBE"><animate attributeName="opacity" values="0.4;0.85;0.4" dur="3.2s" repeatCount="indefinite"/></circle>
+<circle cx="830" cy="110" r="2.5" fill="#00F0FF"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.6s" repeatCount="indefinite"/></circle>
+<circle cx="750" cy="190" r="1.8" fill="#00F0FF"><animate attributeName="opacity" values="0.5;1;0.5" dur="3.8s" repeatCount="indefinite"/></circle>
+<circle cx="860" cy="220" r="2" fill="#FF2D78"><animate attributeName="opacity" values="0.2;0.6;0.2" dur="4.2s" repeatCount="indefinite"/></circle>
+<circle cx="790" cy="270" r="1.5" fill="#7B2FBE"><animate attributeName="opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/></circle>
+<circle cx="870" cy="55" r="1.6" fill="#00F0FF"><animate attributeName="opacity" values="0.3;0.7;0.3" dur="3.9s" repeatCount="indefinite"/></circle>
+<line x1="780" y1="50" x2="830" y2="110" stroke="#7B2FBE" stroke-width="0.7" opacity="0.35"/>
+<line x1="830" y1="110" x2="750" y2="190" stroke="#00F0FF" stroke-width="0.5" opacity="0.25"/>
+<line x1="750" y1="190" x2="860" y2="220" stroke="#00F0FF" stroke-width="0.6" opacity="0.25"/>
+<line x1="860" y1="220" x2="790" y2="270" stroke="#FF2D78" stroke-width="0.5" opacity="0.2"/>
+<line x1="780" y1="50" x2="750" y2="190" stroke="#7B2FBE" stroke-width="0.35" opacity="0.15"/>
+<line x1="780" y1="50" x2="870" y2="55" stroke="#00F0FF" stroke-width="0.4" opacity="0.2"/>
+<line x1="870" y1="55" x2="830" y2="110" stroke="#00F0FF" stroke-width="0.35" opacity="0.18"/>
+</g>
+
+<!-- COSMIC HUD VORTEX (Center) -->
+<g filter="url(#hglow)">
+<!-- Outermost dashed ring - slow CCW -->
+<circle cx="450" cy="155" r="120" stroke="#00F0FF" stroke-width="0.7" fill="none" stroke-dasharray="8 22" opacity="0.2">
+<animateTransform attributeName="transform" type="rotate" from="360 450 155" to="0 450 155" dur="40s" repeatCount="indefinite"/>
+</circle>
+<!-- Large outer ring with segments - CW -->
+<circle cx="450" cy="155" r="105" stroke="#00F0FF" stroke-width="1.5" fill="none" stroke-dasharray="50 12" opacity="0.3">
+<animateTransform attributeName="transform" type="rotate" from="0 450 155" to="360 450 155" dur="28s" repeatCount="indefinite"/>
+</circle>
+<!-- Medium ring - CCW -->
+<circle cx="450" cy="155" r="88" stroke="#7B2FBE" stroke-width="1" fill="none" stroke-dasharray="14 8" opacity="0.35">
+<animateTransform attributeName="transform" type="rotate" from="360 450 155" to="0 450 155" dur="20s" repeatCount="indefinite"/>
+</circle>
+<!-- Inner precision ring - fast CW -->
+<circle cx="450" cy="155" r="70" stroke="#00F0FF" stroke-width="1.8" fill="none" stroke-dasharray="40 110" opacity="0.45">
+<animateTransform attributeName="transform" type="rotate" from="0 450 155" to="360 450 155" dur="14s" repeatCount="indefinite"/>
+</circle>
+<!-- Core crosshair (rotating) -->
+<g opacity="0.25">
+<animateTransform attributeName="transform" type="rotate" from="0 450 155" to="360 450 155" dur="22s" repeatCount="indefinite"/>
+<line x1="450" y1="100" x2="450" y2="210" stroke="#00F0FF" stroke-width="0.7"/>
+<line x1="395" y1="155" x2="505" y2="155" stroke="#00F0FF" stroke-width="0.7"/>
+</g>
+<!-- Innermost solid ring -->
+<circle cx="450" cy="155" r="50" stroke="#00F0FF" stroke-width="0.8" fill="none" opacity="0.4"/>
+<!-- Bright core point pulsing -->
+<circle cx="450" cy="155" r="8" fill="#00F0FF" opacity="0.5">
+<animate attributeName="r" values="6;11;6" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0.35;0.75;0.35" dur="3s" repeatCount="indefinite"/>
+</circle>
+<circle cx="450" cy="155" r="3" fill="#FFFFFF" opacity="0.85"/>
+</g>
+
+<!-- ACCRETION DISK SWEEPS -->
+<g opacity="0.25">
+<ellipse cx="450" cy="155" rx="135" ry="18" fill="none" stroke="url(#accretion)" stroke-width="2.5">
+<animateTransform attributeName="transform" type="rotate" from="0 450 155" to="360 450 155" dur="16s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="450" cy="155" rx="112" ry="12" fill="none" stroke="url(#accretion2)" stroke-width="1.5" opacity="0.6">
+<animateTransform attributeName="transform" type="rotate" from="360 450 155" to="0 450 155" dur="22s" repeatCount="indefinite"/>
+</ellipse>
+</g>
+
+<!-- DATA SCAN LINES -->
+<g opacity="0.15">
+<line x1="195" y1="155" x2="330" y2="155" stroke="#00F0FF" stroke-width="0.8" stroke-dasharray="4 3">
+<animate attributeName="opacity" values="0.08;0.35;0.08" dur="3s" repeatCount="indefinite"/>
+</line>
+<line x1="570" y1="155" x2="705" y2="155" stroke="#00F0FF" stroke-width="0.8" stroke-dasharray="4 3">
+<animate attributeName="opacity" values="0.08;0.35;0.08" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+</line>
+</g>
+
+<!-- HUD CORNER BRACKETS -->
+<g stroke="#00F0FF" stroke-width="1.5" opacity="0.25">
+<path d="M30 20L30 10L50 10" fill="none"/>
+<path d="M870 20L870 10L850 10" fill="none"/>
+<path d="M30 300L30 310L50 310" fill="none"/>
+<path d="M870 300L870 310L850 310" fill="none"/>
+</g>
+
+<!-- STATUS INDICATORS -->
+<g opacity="0.45">
+<rect x="40" y="15" width="8" height="8" fill="#00F0FF" rx="1">
+<animate attributeName="opacity" values="0.3;0.9;0.3" dur="2s" repeatCount="indefinite"/>
+</rect>
+<text x="55" y="22" font-family="monospace" font-size="9" fill="#00F0FF" opacity="0.7">SYS:ONLINE</text>
+<text x="795" y="22" font-family="monospace" font-size="9" fill="#00F0FF" opacity="0.7" text-anchor="end">v3.0-APEX</text>
+<rect x="800" y="15" width="50" height="8" rx="2" stroke="#00F0FF" stroke-width="0.8" fill="none"/>
+<rect x="802" y="17" width="35" height="4" rx="1" fill="#00F0FF" opacity="0.5">
+<animate attributeName="width" values="20;45;35;25;35" dur="5s" repeatCount="indefinite"/>
+</rect>
+<text x="40" y="305" font-family="monospace" font-size="8" fill="#7B2FBE" opacity="0.45">12.9716°N 77.5946°E</text>
+<text x="860" y="305" font-family="monospace" font-size="8" fill="#7B2FBE" opacity="0.45" text-anchor="end">SARA_HOST_UNIT</text>
+</g>
+
+<!-- FLOATING HEX DECORATIONS -->
+<g opacity="0.2" filter="url(#neon)">
+<polygon points="90,22 97,26 97,34 90,38 83,34 83,26" stroke="#00F0FF" stroke-width="0.8" fill="none">
+<animate attributeName="opacity" values="0.15;0.5;0.15" dur="4s" repeatCount="indefinite"/>
+</polygon>
+<polygon points="60,62 67,66 67,74 60,78 53,74 53,66" stroke="#7B2FBE" stroke-width="0.7" fill="none">
+<animate attributeName="opacity" values="0.1;0.4;0.1" dur="5s" repeatCount="indefinite"/>
+</polygon>
+<polygon points="810,242 817,246 817,254 810,258 803,254 803,246" stroke="#00F0FF" stroke-width="0.8" fill="none">
+<animate attributeName="opacity" values="0.2;0.5;0.2" dur="4.2s" repeatCount="indefinite"/>
+</polygon>
+<polygon points="840,272 847,276 847,284 840,288 833,284 833,276" stroke="#7B2FBE" stroke-width="0.7" fill="none">
+<animate attributeName="opacity" values="0.1;0.45;0.1" dur="3.8s" repeatCount="indefinite"/>
+</polygon>
+</g>
+
+<!-- ====== MAIN NAME TEXT ====== -->
+<g filter="url(#txt-glow)">
+<text x="450" y="143" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="800" fill="#00F0FF" opacity="0.12">Mohammed Awais Hussain</text>
+<text x="450" y="143" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="800" fill="#E0D8FF" letter-spacing="1">Mohammed Awais Hussain</text>
+</g>
+
+<!-- TAGLINE -->
+<text x="450" y="175" text-anchor="middle" font-family="monospace" font-size="11" fill="#00F0FF" letter-spacing="5" opacity="0.6">ENGINEERED IN THE DARK. BUILT TO LAST.</text>
+
+<!-- ROLE BADGES -->
+<g opacity="0.45">
+<rect x="218" y="195" width="138" height="22" rx="11" fill="none" stroke="#00F0FF" stroke-width="0.8"/>
+<text x="287" y="210" text-anchor="middle" font-family="monospace" font-size="9" fill="#00F0FF">AGENTIC AI ENGINEER</text>
+<rect x="378" y="195" width="138" height="22" rx="11" fill="none" stroke="#7B2FBE" stroke-width="0.8"/>
+<text x="447" y="210" text-anchor="middle" font-family="monospace" font-size="9" fill="#C9B8FF">LLM TRAINER</text>
+<rect x="538" y="195" width="138" height="22" rx="11" fill="none" stroke="#FF2D78" stroke-width="0.8"/>
+<text x="607" y="210" text-anchor="middle" font-family="monospace" font-size="9" fill="#FF79C6">FULL-STACK DEV</text>
+</g>
+
+<!-- BOTTOM SCANNER LINE -->
+<g opacity="0.2">
+<line x1="100" y1="258" x2="800" y2="258" stroke="#00F0FF" stroke-width="0.5" stroke-dasharray="2 4"/>
+<circle cx="0" cy="258" r="2.5" fill="#00F0FF">
+<animate attributeName="cx" values="100;800;100" dur="8s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0.3;1;0.3" dur="8s" repeatCount="indefinite"/>
+</circle>
+</g>
+
+</svg>

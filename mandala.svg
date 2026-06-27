@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 200 200" width="180" height="180" xmlns="http://www.w3.org/2000/svg" style="background: transparent;">
+  <defs>
+    <!-- Cyan Energy Glow -->
+    <filter id="core-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <radialGradient id="reactor-core-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F3FF" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#005A7A" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <style>
+    @keyframes reactor-spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes reactor-pulse {
+      0%, 100% { transform: scale(0.9); opacity: 0.7; }
+      50% { transform: scale(1.05); opacity: 1; }
+    }
+    @keyframes arc-unfold {
+      0% { transform: scale(0) rotate(-180deg); opacity: 0; }
+      100% { transform: scale(1) rotate(0deg); opacity: 0.9; }
+    }
+    .reactor-base {
+      transform-origin: 100px 100px;
+      animation: reactor-spin 25s linear infinite;
+    }
+    .reactor-pulse-orb {
+      transform-origin: 100px 100px;
+      animation: reactor-pulse 3s ease-in-out infinite;
+    }
+    .arc-petal {
+      transform-origin: 100px 100px;
+      animation: arc-unfold 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+  </style>
+
+  <!-- Pulsing energy field -->
+  <circle class="reactor-pulse-orb" cx="100" cy="100" r="55" fill="url(#reactor-core-glow)" />
+
+  <!-- Outer HUD Calibration Ring -->
+  <circle cx="100" cy="100" r="80" stroke="#00F3FF" stroke-width="1" stroke-dasharray="10 15 5 15" opacity="0.5" />
+  <circle cx="100" cy="100" r="75" stroke="#FF7B00" stroke-width="0.8" stroke-dasharray="4 6" opacity="0.6" />
+
+  <!-- Unfolding Arc Reactor Plates -->
+  <g class="reactor-base">
+    <!-- Plate 1 -->
+    <path class="arc-petal" d="M 100 35 L 120 50 L 112 70 L 88 70 L 80 50 Z" fill="#00F3FF" stroke="#FFFFFF" stroke-width="1.5" filter="url(#core-glow)" opacity="0" style="animation-delay: 0.2s;" />
+    <!-- Plate 2 -->
+    <g transform="rotate(36, 100, 100)">
+      <path class="arc-petal" d="M 100 35 L 120 50 L 112 70 L 88 70 L 80 50 Z" fill="#00F3FF" stroke="#FFFFFF" stroke-width="1.5" filter="url(#core-glow)" opacity="0" style="animation-delay: 0.4s;" />
+    </g>
+    <!-- Plate 3 -->
+    <g transform="rotate(72, 100, 100)">
+      <path class="arc-petal" d="M 100 35 L 120 50 L 112 70 L 88 70 L 80 50 Z" fill="#00F3FF" stroke="#FFFFFF" stroke-width="1.5" filter="url(#core-glow)" opacity="0" style="animation-delay: 0.6s;" />
+    </g>
+    <!-- Plate 4 -->
+    <g transform="rotate(108, 100, 100)">
+      <path class="arc-petal" d="M 100 35 L 120 50 L 112 70 L 88 70 L 80 50 Z" fill="#00F3FF" stroke="#FFFFFF" stroke-width="1.5" filter="url(#core-glow)" opacity="0" style="animation-delay: 0.8s;" />
+    </g>
+    <!-- Plate 5 -->
+    <g transform="rotate(144, 100, 100)">
+      <path class="arc-petal" d="M 100 35 L 120 50 L 112 70 L 88 70 L 80 50 Z" fill="#00F3FF" stroke="#FFFFFF" stroke-width="1.5" filter="url(#core-glow)" opacity="0" style="animation-delay: 1.0s;" />
+    </g>
+    <!-- Plate 6 -->
+    <g transform="rotate(180, 100, 100)">
+      <path class="arc-petal" d="M 100 35 L 120 50 L 112 70 L 88 70 L 80 50 Z" fill="#00F3FF" stroke="#FFFFFF" stroke-width="1.5" filter="url(#core-glow)" opacity="0" style="animation-delay: 1.2s;" />
+    </g>
+    <!-- Plate 7 -->
+    <g transform="rotate(216, 100, 100)">
+      <path class="arc-petal" d="M 100 35 L 120 50 L 112 70 L 88 70 L 80 50 Z" fill="#00F3FF" stroke="#FFFFFF" stroke-width="1.5" filter="url(#core-glow)" opacity="0" style="animation-delay: 1.4s;" />
+    </g>
+    <!-- Plate 8 -->
+    <g transform="rotate(252, 100, 100)">
+      <path class="arc-petal" d="M 100 35 L 120 50 L 112 70 L 88 70 L 80 50 Z" fill="#00F3FF" stroke="#FFFFFF" stroke-width="1.5" filter="url(#core-glow)" opacity="0" style="animation-delay: 1.6s;" />
+    </g>
+    <!-- Plate 9 -->
+    <g transform="rotate(288, 100, 100)">
+      <path class="arc-petal" d="M 100 35 L 120 50 L 112 70 L 88 70 L 80 50 Z" fill="#00F3FF" stroke="#FFFFFF" stroke-width="1.5" filter="url(#core-glow)" opacity="0" style="animation-delay: 1.8s;" />
+    </g>
+    <!-- Plate 10 -->
+    <g transform="rotate(324, 100, 100)">
+      <path class="arc-petal" d="M 100 35 L 120 50 L 112 70 L 88 70 L 80 50 Z" fill="#00F3FF" stroke="#FFFFFF" stroke-width="1.5" filter="url(#core-glow)" opacity="0" style="animation-delay: 2.0s;" />
+    </g>
+  </g>
+
+  <!-- Glowing Core Inner Rings -->
+  <circle cx="100" cy="100" r="28" fill="#0D0B1E" stroke="#00F3FF" stroke-width="2" filter="url(#core-glow)" />
+  <circle cx="100" cy="100" r="18" fill="#00F3FF" filter="url(#core-glow)" />
+  <circle cx="100" cy="100" r="8" fill="#FFFFFF" />
+</svg>
